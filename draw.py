@@ -66,9 +66,9 @@ def main():
     d.text((32, 80), "MONDAY 23 NOVEMBER 2026  •  SIX STORIES THAT DEFINED THE DAY",
            font=f_date, fill=(140, 220, 220))
     # 2 x 3 grid of tiles
-    pad, gap = 24, 20
+    pad, gap = 24, 28
     tw = (W - 2 * pad - gap) // 2
-    th = 268
+    th = 262
     top0 = 146
     f_num = font(BOLD, 30)
     f_tag = font(BOLD, 22)
