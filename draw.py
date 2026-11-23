@@ -72,7 +72,7 @@ def main():
     top0 = 146
     f_num = font(BOLD, 30)
     f_tag = font(BOLD, 22)
-    f_head = font(BOLD, 27)
+    f_head = font(BOLD, 25)
     f_src = font(REG, 20)
     for i, (num, tag, head, src) in enumerate(STORIES):
         col, row = i % 2, i // 2
@@ -89,10 +89,10 @@ def main():
         d.text((cx - tw_num / 2, cy - 21), num, font=f_num, fill=(255, 255, 255))
         d.text((x0 + 86, y0 + 30), tag, font=f_tag, fill=accent)
         lines = wrap(d, head, f_head, tw - 64)
-        y = y0 + 92
+        y = y0 + 88
         for ln in lines[:4]:
             d.text((x0 + 32, y), ln, font=f_head, fill=(20, 20, 20))
-            y += 36
+            y += 33
         d.text((x0 + 32, y1 - 38), "Source: " + src + "  •  23 Nov 2026",
                font=f_src, fill=GREY)
     # footer strip
